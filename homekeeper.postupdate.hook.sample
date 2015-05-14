@@ -1,0 +1,19 @@
+#!/usr/bin/env perl
+use 5.010;
+use strict;
+use warnings;
+
+sub LOG_FILE () { $ENV{HOME}."/.homekeeper.log" }
+
+die sprintf "usage: %s IP-Address [domains ...]"  unless @ARGV;
+my ($ip, @domains) = @ARGV;
+
+open my $log_fh, '>>', LOG_FILE or die '\(^o^)/';
+
+for my $domain (@domains) {
+    print $log_fh sprintf("[%s][%s]: A RECORD changed to: %s\n", $ip, $domain;
+}
+
+close $log_fh;
+
+

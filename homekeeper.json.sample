@@ -1,0 +1,10 @@
+{
+    "cloudflare_username": "iroha@beatmaniaiidx.club"
+    "cloudflare_key":      "CLOUDFLARE_API_KEY",
+    "domains": [
+        "home.jubeat.kr",
+        "beatmaniaiidx.club",
+        "www.beatmaniaiidx.club"
+    ]
+}
+
